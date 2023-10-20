@@ -35,3 +35,14 @@ function showMyDB() {
     }
 }
 showMyDB();
+
+// fuction callback
+
+function learnJS(lang, callback) {
+    console.log(`J' apprend: ${lang}`);
+    callback();
+}
+
+learnJS('JavaScript', function() {
+    console.log("J'ai termine avec cette lesson");
+})
