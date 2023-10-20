@@ -18,3 +18,20 @@ for (let i = 0; i < test.length; i++) {
     console.log(`${test.toUpperCase()[i]} \n`);
 }
 console.log(`${test[0]} \n ${test[1]}`);
+
+const personalMovieDB = {
+    count: 30,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+}
+
+function showMyDB() {
+    if (!personalMovieDB.private) {
+        console.log(personalMovieDB);
+    } else {
+        console.log('Pas prive');
+    }
+}
+showMyDB();
